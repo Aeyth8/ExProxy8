@@ -1,7 +1,5 @@
 #include "pch.h"
 
-static bool bShouldLog{false};
-
 /*
 	Roadmap
 
@@ -20,20 +18,18 @@ int main(int ArgC, char* ArgV[])
 	// ArgV + 1 skips the first element (executable name)   
 	std::vector<std::string> Arguments(ArgV + 1, ArgV + ArgC);
 
+	Parse::ParseCLI(Arguments);
+
 	
-
-	for (const std::string& Arg : Arguments) {
-		std::cout << Arg << '\n';
-
-	}
 
 	//std::cout << "ArgC:: " << ArgC << " || ArgV:: " << Arguments << "\nbShouldLog:: " << bShouldLog << "\n";
 
 
 
 	while (1) {
-		if (GetAsyncKeyState(0x1B)) break;
-		Sleep(1000);
+		// Escape key to close.
+		if (GetAsyncKeyState(0x1B) & 0x8000) break;
+		Sleep(100);
 	}
 
 	return 0;

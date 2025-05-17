@@ -7,4 +7,8 @@
 #include <string>
 #include <vector>
 
+#include "Global.h"
+#include "Aeyth8/Parsing.h"
+
+
 #endif // PCH_H

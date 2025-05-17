@@ -17,6 +17,15 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Aeyth8\Parsing.cpp">
+      <Filter>Aeyth8</Filter>
+    </ClCompile>
+    <ClCompile Include="Aeyth8\Log.cpp">
+      <Filter>Aeyth8</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -26,6 +35,12 @@
       <Filter>Aeyth8</Filter>
     </ClInclude>
     <ClInclude Include="Aeyth8\Parsing.h">
+      <Filter>Aeyth8</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Aeyth8\Log.h">
       <Filter>Aeyth8</Filter>
     </ClInclude>
   </ItemGroup>

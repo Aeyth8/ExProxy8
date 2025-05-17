@@ -7,7 +7,7 @@ class Parse
 public:
 
 
-	const std::vector<std::string>& ParseLibraries(char* ArgV[])
+	static const std::vector<std::string> ParseCLI(const std::vector<std::string>& Arguments);
 
 
 
