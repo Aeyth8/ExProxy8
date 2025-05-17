@@ -161,6 +161,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Aeyth8\Macros.hpp" />
+    <ClInclude Include="Aeyth8\Parsing.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
